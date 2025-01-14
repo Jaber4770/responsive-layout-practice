@@ -1,0 +1,111 @@
+.task-1-container {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.left {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 100px;
+    height: 60vh;
+}
+
+.right {
+    background-color: lightyellow;
+    border-radius: 10px;
+    padding: 100px;
+    height: 60vh;
+    flex-grow: 1;
+}
+
+/* Task 2 */
+.grid-layout-container{
+    display: grid;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 80vh;
+    width: 100%;
+
+}
+.box-1{
+    background-color: red;
+    padding: 100px;
+    grid-row:1/3;
+    grid-column: 1/2;
+}
+.box-2{
+    background-color: yellow;
+    padding: 100px;
+}
+.box-3{
+    background-color: purple;
+    padding: 100px;
+}
+.box-4{
+    background-color: rgb(49, 42, 112);
+    padding: 100px;
+}
+
+
+
+
+
+
+/* Meadia Query */
+@media screen and (max-width: 576px) {
+    .task-1-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    height: 100vh; 
+    width: 100%; 
+    gap: 10px; 
+}
+
+.item-1 {
+    grid-row: 1 / 3; /* Span two rows */
+    background-color: lightblue;
+}
+
+.item-2 {
+    grid-row: 1 / 2; /* Occupy the first row */
+    grid-column: 2 / 3; /* Occupy the second column */
+    background-color: lightgreen;
+}
+
+.item-3 {
+    grid-row: 2 / 3; /* Occupy the second row */
+    grid-column: 2 / 3; /* Stay in the second column */
+    justify-self: start; /* Align to the start of the second column */
+    width: 50%; /* Take half of the parent's width (25% of the container) */
+    background-color: lightcoral;
+}
+
+.item-4 {
+    grid-row: 2 / 3; /* Occupy the second row */
+    grid-column: 2 / 3; /* Stay in the second column */
+    justify-self: end; /* Align to the end of the second column */
+    width: 50%; /* Take half of the parent's width (25% of the container) */
+    background-color: lightyellow;
+}
+
