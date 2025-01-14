@@ -1,0 +1,32 @@
+.task-1-container {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.left {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 100px;
+    height: 60vh;
+}
+
+.right {
+    background-color: lightyellow;
+    border-radius: 10px;
+    padding: 100px;
+    height: 60vh;
+    flex-grow: 1;
+}
+
+
+/* Meadia Query */
+@media screen and (max-width: 576px) {
+    .task-1-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
